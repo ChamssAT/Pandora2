@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SIRIUS-LAB-TECHNOLOGIE</title>
+  <style>
+    /* ===== Style Global ===== */
+    * {margin: 0; padding: 0; box-sizing: border-box;}
+    body {
+      font-family: "Segoe UI", Roboto, sans-serif;
+      background: linear-gradient(135deg, #0f172a, #1e293b);
+      color: #f8fafc; line-height: 1.6;
+    }
+
+    /* ===== Header ===== */
+    header {
+      background: rgba(15,23,42,0.95);
+      backdrop-filter: blur(10px);
+      padding: 1rem 2rem;
+      display: flex; align-items: center; justify-content: space-between;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.5);
+    }
+    header .logo {font-weight: bold; font-size: 1.5rem; color: #38bdf8;}
+    header nav a {
+      margin-left: 1.2rem; color: #f8fafc; text-decoration: none;
+      font-size: 0.95rem; transition: color 0.3s;
+    }
+    header nav a:hover {color: #38bdf8;}
+
+    /* ===== Hero ===== */
+    .hero {
+      display: grid; grid-template-columns: 1fr 1fr; gap: 2rem;
+      max-width: 1100px; margin: 3rem auto; padding: 0 1rem;
+      align-items: center;
+    }
+    .hero-text h2 {
+      font-size: 2.5rem; font-weight: bold;
+      background: linear-gradient(90deg, #38bdf8, #6366f1);
+      -webkit-background-clip: text; -webkit-text-fill-color: transparent;
+      margin-bottom: 1rem;
+    }
+    .hero-text p {margin-bottom: 1rem; color: #cbd5e1;}
+    .btn {
+      display: inline-block; padding: 0.75rem 1.5rem;
+      border-radius: 8px; text-decoration: none; font-weight: bold;
+      transition: all 0.3s ease;
+    }
+    .btn-primary {background: #6366f1; color: #fff;}
+    .btn-primary:hover {background: #4f46e5;}
+    .btn-outline {border: 1px solid #38bdf8; color: #38bdf8;}
+    .btn-outline:hover {background: #38bdf8; color: #0f172a;}
+    .location {margin-top: 1rem; font-size: 0.9rem; color: #94a3b8;}
+    .device-preview {
+      border-radius: 20px; padding: 2rem;
+      background: linear-gradient(145deg, #1e293b, #0f172a);
+      box-shadow: 0 8px 20px rgba(0,0,0,0.5); text-align: center;
+    }
+    .device-screen h4 {color: #38bdf8;}
+    .device-screen p {color: #94a3b8;}
+
+    /* ===== Sections ===== */
+    section {max-width: 1100px; margin: 3rem auto; padding: 0 1rem;}
+    h3 {font-size: 2rem; margin-bottom: 1.5rem; color: #38bdf8; text-align: center;}
+
+    /* ===== Services ===== */
+    .services {
+      display: grid; gap: 1.5rem;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    }
+    .service {
+      background: #1e293b; border-radius: 12px; padding: 1.5rem;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.4); transition: transform 0.3s;
+    }
+    .service:hover {transform: translateY(-6px);}
+
+    /* ===== Portfolio ===== */
+    .portfolio {
+      display: grid; gap: 1rem;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    }
+    .card {
+      background: #1e293b; padding: 1.5rem; border-radius: 12px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.4);
+    }
+
+    /* ===== Contact ===== */
+    .contact {display: grid; gap: 2rem; grid-template-columns: 1fr 1fr;}
+    .contact-form label {display: block; margin-top: 1rem; font-size: 0.9rem;}
+    .contact-form input, .contact-form textarea {
+      width: 100%; margin-top: 0.5rem; padding: 0.8rem;
+      border: none; border-radius: 8px; background: #0f172a; color: #f8fafc;
+    }
+    .contact-form button {
+      margin-top: 1rem; padding: 0.8rem 1.5rem;
+      background: #38bdf8; color: #0f172a; border: none;
+      border-radius: 8px; cursor: pointer; transition: 0.3s;
+    }
+    .contact-form button:hover {background: #0ea5e9;}
+
+    /* ===== Footer ===== */
+    footer {
+      text-align: center; padding: 2rem;
+      font-size: 0.9rem; background: #0f172a; color: #94a3b8; margin-top: 2rem;
+    }
+
+    /* ===== Responsive ===== */
+    @media (max-width: 768px) {
+      .hero {grid-template-columns: 1fr; text-align: center;}
+      .contact {grid-template-columns: 1fr;}
+    }
+  </style>
+</head>
+<body>
+  <!-- Header -->
+  <header>
+    <div class="logo">SIRIUS-LAB-TECHNOLOGIE</div>
+    <nav>
+      <a href="#services">Services</a>
+      <a href="#portfolio">Projets</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <!-- Hero -->
+  <section class="hero">
+    <div class="hero-text">
+      <h2>SOLUTIONS INNOVANTE POUR  LE NUMERIQUE</h2>
+     <!-- <p>Conception d’applications web & mobile, maintenance informatique et électronique, 
+         
+        installation paraboliques, diagnostic et audit des systèmes d’information.</p>-->
+     <p>SIRIUS-LAB-TECHNOLOGIE est une entreprise innovante spécialisée dans les solutions numériques et technologiques. Nous accompagnons particuliers et entreprises dans la conception d’applications web et mobiles performantes, la maintenance informatique et électronique, ainsi que l’installation d’antennes paraboliques de haute qualité. Notre expertise s’étend également au diagnostic et à l’audit des systèmes d’information afin de détecter d’éventuelles failles de sécurité et proposer des corrections efficaces. Basés à la Cité Snen au quartier Aéroport , nous plaçons l’innovation, la sécurité et la satisfaction client au cœur de toutes nos prestations pour contribuer au développement numérique de nos partenaires.
+     </p>
+     <a href="#contact" class="btn btn-primary">Nous Contacter</a>
+      <a href="#services" class="btn btn-outline">Voir nos Services</a>
+      <p class="location">📍 Cité SNEN, Quartier Aeroport</p>
+    </div>
+    <div class="device-preview">
+      <div class="device-screen">
+        <h4>Technologie de Pointe</h4>
+        <p>Développement sécurisé et maintenance garantie.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Services -->
+  <section id="services">
+    <h3>Nos Services</h3>
+    <div class="services">
+      <div class="service"><h4>Développement Web & Mobile</h4><p>Sites web modernes et applications mobiles performantes.</p></div>
+      <div class="service"><h4>Maintenance Informatique & Électronique</h4><p>Assistance technique fiable et rapide.</p></div>
+      <div class="service"><h4>Installation Paraboles</h4><p>Installation professionnelle d’antennes paraboliques.</p></div>
+      <div class="service"><h4>Audit & Sécurité SI</h4><p>Analyse des failles de securitè, diagnostic et correction pour plus de sécurité.</p></div>
+    </div>
+  </section>
+
+  <!-- Portfolio -->
+  <section id="portfolio">
+    <h3>Nos Réalisations</h3>
+    <div class="portfolio">
+      <div class="card"><h4>Projet Web</h4><p>Application e-commerce sécurisée AKA Printing,clinique abani, temple du savoir,CSP zeider.etc....</p></div>
+      <div class="card"><h4>Projet Mobile</h4><p>Application Android de gestion (classe; bibliotheque numerique; etablissemen...).</p></div>
+      
+      <div class="card"><h4>Projet de  bullettin scolaire csp temple du savoir </h4><p></p></div>
+      
+      <div class="card"><h4>Audit SI</h4><p>Diagnostic complet pour une entreprise privè .</p></div>
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <section id="contact">
+    <h3>Contactez-nous</h3>
+    <div class="contact">
+      <form class="contact-form" id="contactForm">
+        <label>Nom</label>
+        <input type="text" required>
+        <label>Email</label>
+        <input type="email" required>
+        <label>Message</label>
+        <textarea rows="5" required></textarea>
+        <button type="submit">Envoyer</button>
+      </form>
+      <div>
+        <h4>Adresse</h4>
+        <p>📍 Cité SNEN Aéroport, Niamey</p>
+        <h4>Email</h4>
+        <p>chamssoudinemega@gmail.com</p>
+        <h4>Téléphone</h4>
+        <p>+227 89 84 14 76</p>
+      </div>
+    </div>
+  </section>
+<!-- Ajout des logos -->
+<div class="logos">
+  <img src="i1.png" alt="Logo Pecto" class="logo">
+  <img src="i2.png" alt="Logo Verseau" class="logo">
+</div>
+
+<style>
+  .logos {
+    display: flex;
+    gap: 15px;           /* espace entre les logos */
+    justify-content: center; 
+    margin: 20px 0;
+  }
+  .logo {	
+    width: 60px;         /* taille du logo */
+    height: auto;        /* garde les proportions */
+  }
+</style>
+  <!-- Footer -->
+  <footer>
+    <p>&copy; <span id="year"></span> SIRIUS-LAB-TECHNOLOGIE. Tous droits réservés.</p>
+  </footer>
+
+  <script>
+    // Année dynamique
+    document.getElementById('year').textContent = new Date().getFullYear();
+    // Formulaire
+    document.getElementById('contactForm').addEventListener('submit', function(e) {
+      e.preventDefault();
+      alert('Message envoyé — nous vous répondrons bientôt !');
+      this.reset();
+    });
+  </script>
+</body>
+</html>
